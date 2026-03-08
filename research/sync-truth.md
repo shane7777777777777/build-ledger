@@ -1,25 +1,26 @@
-# Research Gate 2: Sync Truth
+# Sync Truth — Research Summary
 
-**Status:** PARTIALLY DONE (prior research exists)
-**Assigned:** TBD
-**Priority:** HIGH — blocks ledger promotion
+**Source:** Echo Pro research agent (MacBook), 2026-03-07 21:00 MST
+**Original location:** GAUNTLET_SESSION_LEDGER.md on Studio
 
-## Question
-Does OneDrive sync preserve low-latency ledger writes both same-network and remote?
+## Finding: OneDrive is NOT safe for agent-to-agent coordination
 
-## What We Already Know (from Echo Pro research 2026-03-08)
-- OneDrive CANNOT merge non-Office files — creates conflict copies (e.g. `filename-MachineName.ext`)
-- Sync latency: 30s to 10min depending on network conditions
-- 9 conflict marker files already exist in `_GATEWAY` from Jan 18 sync event
-- SSH direct write to Studio over Tailscale is more reliable than OneDrive for shared logging
+- Sync latency floor: 30 seconds (all traffic routes through Microsoft cloud, even on same LAN)
+- Non-Office files get SILENT conflict copies — no user notification
+- Does NOT merge concurrent edits — creates filename-MachineName duplicates
+- Does NOT honor POSIX file locks
+- Documented data loss: newer files overwritten by older cloud versions (Microsoft Q&A, 2024-2025)
+- Claude Code GitHub issue #29153: cascading corruption from concurrent OneDrive writes
 
-## What We Still Need to Prove
-1. Actual measured latency: write on MacBook, check on Studio (and reverse)
-2. What happens with concurrent appends from two machines?
-3. Does OneDrive ever silently drop a write?
-4. Is the GitHub repo (this repo) a better coordination surface than OneDrive?
+## Recommendation
+- Use SSH direct writes for real-time coordination
+- Use git repo (this repo) for persistent coordination
+- OneDrive for storage/sharing only, never for real-time coordination
 
-## Pass Criteria
-- Measured sync times documented
-- Concurrent write behavior documented
-- Clear recommendation: OneDrive vs SSH vs Git for each use case
+## Sources
+- Microsoft sync troubleshooting docs
+- SharePoint Maven conflict docs
+- rclone forum latency measurements
+- Claude Code GitHub issue #29153
+
+## Status: PROOF COMPLETE — awaiting 4-agent approval

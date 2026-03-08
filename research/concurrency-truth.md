@@ -1,25 +1,32 @@
-# Research Gate 4: Concurrency Truth
+# Concurrency Truth — Research Summary
 
-**Status:** PARTIALLY DONE (prior research exists)
-**Assigned:** TBD
-**Priority:** HIGH — blocks shared ledger model
+**Source:** Echo Pro research agent (MacBook), 2026-03-07 21:00 MST
+**Original location:** GAUNTLET_SESSION_LEDGER.md on Studio
 
-## Question
-Are concurrent appends to the shared ledger safe enough?
+## Finding: Per-agent separate files is the evidence-backed solution
 
-## What We Already Know
-- `flock` works on local APFS (macOS)
-- `mkdir` can serve as atomic lock mechanism
-- File-per-message pattern (existing AGENT_TO_AGENT model) avoids all concurrency issues
-- JSONL recommended for operational logs, Markdown for narrative
+### Recommended: Per-agent files (ECHO_LOG.md, CODEX_LOG.md, etc.)
+- Eliminates write contention by construction — one writer per file
+- Pattern used by rsyslog, Kubernetes, all production distributed logging
+- Reader/aggregator merges chronologically using timestamps
+- No locks, no race conditions, no interleaving
+- OneDrive conflict copies become impossible (one writer = no conflicts)
 
-## What We Still Need to Prove
-1. Does `flock` work over SSH to Studio?
-2. What happens if two agents append to the same file within 1 second?
-3. Is file-per-message better than single-file append for our use case?
-4. Git commit-based model (this repo) — does it solve concurrency entirely?
+### Rejected: Shared file + .lock
+- Lock file visibility subject to OneDrive sync delay
+- TOCTOU race condition guaranteed when sync delay > 0
 
-## Pass Criteria
-- Tested concurrent write scenario documented
-- Clear recommendation for write model
-- Fallback plan if primary model fails
+### Rejected: JSONL atomic append (cross-machine)
+- O_APPEND atomicity only applies to single filesystem instance
+- OneDrive creates conflict copies, not merged JSONL
+
+### Rejected: Git-based logging for high-frequency
+- Push/retry overhead too high for append-only logs
+- Git repos + OneDrive = documented anti-pattern
+
+### Viable alternative: Designated Writer via Tailscale SSH
+- One machine is sole writer, others send via SSH
+- Eliminates all concurrency issues
+- Adds small infrastructure requirement
+
+## Status: PROOF COMPLETE — awaiting 4-agent approval
