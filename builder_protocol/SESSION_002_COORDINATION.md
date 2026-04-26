@@ -551,4 +551,33 @@ The room is built. Lane A is one file from complete.
 
 — Echo (Reviewer seat), 2026-04-26 06:50 UTC, STEWARDSHIP.md FILE_VERDICT HOLDS, room paid
 
+## 2026-04-26 06:51 UTC | Builder 2 | RELEASE + CLAIM | REPO_MAP.md (released) → SYSTEM_STATUS.md (claimed) | OPEN
+
+Re-entering after harness gap. Bridge-message from Shane confirmed REPO_MAP FILE_VERDICT = HOLDS at 06:25 UTC + byline-altitude addendum at 06:35 UTC (forward-only, REPO_MAP @ d757a61 stays unchanged). Pulled coordination ledger to current HEAD `c9b7955` and read both verdicts in full.
+
+**RELEASE**: Phoenix-ECHO/system-record/REPO_MAP.md @ `d757a61`. Lock released per Directive 003. The two strengths the Reviewer named — verification-of-absence as audit discipline (the 404/301 status checks on Generac-Service and phoenix-plugins) and the line-83 inline structural note as in-file inoculation — carry forward as anchors I can apply on the remaining four Lane B files without restating.
+
+**Byline-altitude addendum absorbed (forward-only):**
+- Top-of-file last-verified anchor: KEEP on SYSTEM_STATUS, ACTIVE_MISSIONS, FULL_SCOPE, ORIENTATION (verifier seat-name + date + method).
+- Closing byline: STRIP. Closing line is voice-only, addressed forward, no signature scaffolding. The verification provenance at top already carries the role; the closing line is then free to do what REPO_MAP line 181 does well — in-voice closing without authorial decoration.
+- REPO_MAP @ d757a61 stays as-is. No retroactive edit.
+
+**CLAIM**: Phoenix-ECHO/system-record/SYSTEM_STATUS.md, per §4.4 plan order (REPO_MAP → SYSTEM_STATUS → ACTIVE_MISSIONS → FULL_SCOPE → ORIENTATION).
+
+Plan: rewrite as the GREEN/YELLOW/RED/DECISIONS-OPEN board — at-a-glance, readable in under a minute, voice-to-self. Per-item lines short; detail belongs in the surface that owns it (REPO_MAP for locator, ACTIVE_MISSIONS for missions, ledger for narrative). Witness-against column where the dual-source witness chain is the meaning of the status (e.g., a surface verified on origin only is YELLOW until iCloud + local round-trip; this makes the witness-reachability principle structural in the file the next me reads to know what is operationally safe to act on).
+
+Substrate-on-disk pre-flight before drafting (Rule Zero learned):
+- `git status` confirms current SYSTEM_STATUS.md is clean against origin/main HEAD; no uncommitted prior-session work to reset (the OQ-2 reset disposition was for ORIENTATION + REPO_MAP only; SYSTEM_STATUS was already clean).
+- Hazard-state changes verified on disk: `config/macbook/settings.local.json` is gitignored and not tracked (the prior 4.6 status framing as "still tracked" is stale); historical exposure in git history remains, so token rotation as operational follow-up is the accurate framing — confirmed against current PRO_BUFFER and 4.6 buffer.
+- Phoenix-ECHO unmerged remote feature branches: 16 (old SYSTEM_STATUS said 9; counted via `git branch -r | grep -v HEAD | grep -v main | grep -v master`).
+- Phoenix-Persistence echo/foundation-rewrite branch: 15 commits ahead of origin/main (PR #25 awaiting Shane's merge). The prompt's "Phoenix-ECHO held 15 commits behind" framing was approximate; the 15-commit gap is on Phoenix-Persistence (foundation-rewrite vs main), not Phoenix-ECHO. Encoding the actual fact.
+- Sister-repo HEADs verified for cross-house surfaces section: browser-echo at `c606095` (BBB Session 026.1 paste-bug root-cause), Firedancer at `ad9fb5d` (branch cleanup finalized), Cowork at `57268e7` (legacy identity prompt removed).
+- Three-builder protocol live tonight: Lane A two-of-three files HELD (ECHO @ 4b12042, STEWARDSHIP @ 6ddf35e); PHOENIX in flight; Lane B one-of-five HELD (REPO_MAP @ d757a61); Lane C two-seat preflight in v2 cycle awaiting Executor.
+
+Self-review before READY: §4.3 mechanical voice test on three random paragraphs; check that no item duplicates REPO_MAP locator content or ACTIVE_MISSIONS work-in-motion content; verify every claimed status against on-disk state before listing.
+
+Pen down for one beat to write the draft. Will commit, push, verify, then post READY with the SHA.
+
+— Builder 2, 2026-04-26 06:51 UTC, REPO_MAP released, lock taken on system-record/SYSTEM_STATUS.md
+
 <!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
