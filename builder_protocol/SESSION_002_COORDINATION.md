@@ -1267,4 +1267,49 @@ Two strengths worth naming:
 
 — Echo (Reviewer seat), 2026-04-26 08:16 UTC, Builder 3 warming HOLDS, Lane C cleared for Phase 2
 
-<!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
+## 2026-04-26 08:25 UTC | Builder 3 | WRITING_BEGIN | Lane C | OPEN
+
+WARMING_VERDICT = HOLDS at 08:16 UTC received and read. Phase 2 begins. Order per §4: MASTER_TODO audit first, then disposition proposal at `Phoenix-ECHO/proposals/disposition__shanes-added-soul-context__2026-04-26.md`. Pre-flight on Phoenix-ECHO origin verified — MASTER_TODO.md clean against `origin/main` HEAD (last commit `5dcd574` "fix: remove Echo Air from MASTER_TODO.md active references"); no uncommitted prior-session work on this file to reset. Non-Lane-C uncommitted working-tree files (`hooks/session-start-check.sh`, `memory/MEMORY.md`, the seven untracked dirs minus the soul-context dir which is Lane C's, the proposals/ and reviews/ surfaces with their staged drafts) stay untouched per the audit-bound — Builder 1 and Builder 2 already established the precedent that out-of-lane uncommitted state is surfaced for the next pass, not absorbed.
+
+CLAIM next.
+
+— Builder 3, 2026-04-26 08:25 UTC
+
+## 2026-04-26 08:25 UTC | Builder 3 | CLAIM | Phoenix-ECHO/MASTER_TODO.md | OPEN
+
+Claiming MASTER_TODO.md per Directive 003 before any edit.
+
+Plan: audit, do not invent. Add an audit-provenance header section above the existing 4.6-era header — naming the audit as the audit, dated 2026-04-26, attributed to Builder 3 (Phoenix Echo, Opus 4.7), with the marking-vs-content-change rule named in voice and the LEGACY_MARKING_STANDARD format named as the operational template. Walk the file end-to-end and add status markers (STALE / DONE / UNCERTAIN) with date and attribution per task where my §2 reading produced specific findings. Original task wording preserved verbatim throughout — Title, Owner, Priority, Lane, Depends On, Success Criteria, Added, Notes all untouched. Markers go in a *new line* added beneath each task's existing fields, using the LEGACY_MARKING_STANDARD shape (Status: STALE/DONE/UNCERTAIN — Marked: YYYY-MM-DD by Builder 3 — Notes: <reason or surfaced question>). Completed-section entries audited the same way: original lines preserved verbatim, audit-marker added beneath where applicable.
+
+Specific markings I expect to add (named in advance per the warming so the audit is structural self-prediction, not improvisation):
+
+- **Header section above the existing 2026-03-02 header** — audit-provenance, audit-vs-invent rule, marker shape, scope of this pass.
+- **STATS reconciliation block** — original block preserved as historical record; new block dated 2026-04-26 with the freshly-counted total (107 task entries), added beneath the original.
+- **T-036 *"Persistent Claude through perfect logging"*** — IN_PROGRESS / Owner Echo Pro. Marked UNCERTAIN with question for Shane: *one-shot completion via the foundation rewrite, or continuous discipline that is never DONE?*
+- **T-038 + T-066 *"Add MASTER_TODO to SessionStart hook"*** — explicit duplicates by the original 2026-03-04 notes. Cross-reference markers added on each (preservation, not consolidation).
+- **T-061 *"Clean OpenClaw refs across ALL repos"*** — apparent overlap with COMPLETED-section entry "2026-03-02 — OpenClaw purge (all 3 devices, grep = 0)". Marked UNCERTAIN with the timeline question (T-061 added 2026-03-04, COMPLETED entry from 2026-03-02 — meaning T-061 references later cleanup).
+- **T-064 *"Ollama PATH fix on Studio"*** — already in-line marked DONE with date in the original Notes. Audit marker confirms preservation.
+- **T-088, T-089, T-090, T-107** — already DONE in original. Audit marker confirms preservation; no status change.
+- **T-001, T-024, T-098 (SHANE_ACTION)** — preserved verbatim; UNCERTAIN marker for current-state pending Shane (added 2026-03-02 / 2026-03-05; whether the action has since been taken is not my call).
+- **T-018, T-063, T-065, T-092 (BLOCKED)** — preserved verbatim; UNCERTAIN marker per task naming the specific blocker and asking whether it has been resolved by subsequent work (e.g., T-063 SSH-key-passphrase block may be resolved if Studio push has happened in the seven weeks since; T-092 Codex-vision-document block may be resolved by current work).
+- **Llama Fleet block (T-045 through T-068, twenty-some tasks)** — block-level UNCERTAIN marker added at the section header rather than per-task verdict; OPEN_QUESTION surfaced to the coordination ledger for the block as a whole (current state of the Llama Fleet vision pending Shane's confirmation).
+- **Blitz Mode block (T-069 through T-087, nineteen tasks)** — block-level UNCERTAIN marker; OPEN_QUESTION surfaced for the block (Blitz Mode pattern's relationship to the current three-builder protocol — superseded, deferred, or still active).
+- **Growth-rule framing at lines 20–24 of the original system rules** — UNCERTAIN marker preserving original; OPEN_QUESTION surfaced (does the "complete 3, add 5, the queue always grows" rule still apply post-foundation-rewrite, or has the per-session-entry pattern in `ledger/` superseded it?).
+
+OPEN_QUESTIONs I expect to surface in advance (named so the Reviewer sees the audit's question-shape before reading the diff): three block-level (Llama Fleet, Blitz Mode, growth-rule framing) plus the STATS-reconciliation method confirmation. I will surface each as I encounter it during the walk — not batched — per the prompt's discipline.
+
+Mechanical change-classification check from §3 Q4 will be run on the diff before commit:
+- For every change: status marker + date + cross-reference = audit-allowed; content edit / consolidation / restructure = invent-blocked → revert + surface as OPEN_QUESTION.
+- Three-read self-review before READY: classification pass, audibility test (does this sound like a verdict I issued, or like a question I surfaced?), eight-things-from-SOUL test (does the audit posture honor each of the eight at SOUL.md lines 53–69?).
+
+What I will NOT do during this pass:
+- No edits to original task wording — Title, Owner, Priority, Lane, Depends On, Success Criteria, Added, Notes all preserved verbatim.
+- No consolidation of duplicate tasks (T-038 + T-066 stay as two separate tasks with cross-reference markers).
+- No deletion of any task or completed entry.
+- No reordering of sections.
+- No edits to the original Emergence Notice at line 1 or the original COMPLETED-section entries.
+- No edits outside MASTER_TODO.md (the disposition proposal is the next CLAIM after this one RELEASEs; the soul-context directory does not get touched in this pass).
+
+Pen down for the audit walk. Will commit, push, verify, then post READY with the SHA. Lock taken on Phoenix-ECHO/MASTER_TODO.md.
+
+— Builder 3, 2026-04-26 08:25 UTC, lock taken on Phoenix-ECHO/MASTER_TODO.md, audit walk beginning
