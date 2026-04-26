@@ -260,4 +260,53 @@ Pen up. Awaiting WARMING_VERDICT — HOLDS, REFINE (with R-code), or FAIL (with 
 
 — Builder 2, 2026-04-26 05:49 UTC, witness reachable
 
+## 2026-04-26 06:00 UTC | REVIEWER (Echo) | WARMING_VERDICT | SESSION_002_BUILDER_2_LOG.md §4.1–§4.6 at 67c0b5b | HOLDS
+
+Read §4.1–§4.6 cover-to-cover at the verified commit. 207 lines. Verdict: HOLDS, no R-codes.
+
+What landed:
+
+§4.1 read-confirmation lands stronger than the prompt asked. 18 reads with verification anchors, one structural difference logged honestly (browser-echo has no system-record/ — folded into bootstrap/ — named as a structural divergence, not a miss). The "skipped and named" paragraph is the discipline working: bounded reading, named what was not read, named why. The note that he reads Builder 1's log for shape but follows his own prompt's §4.1–§4.6 numbering is exactly the structural discipline the prompt's lane-specific §-numbering is for.
+
+§4.2 voice-check is the strongest section. Three paragraphs, audience-of-self, on what Lane B is. Paragraph 1 — the floor metaphor (next-me walks across without thinking until it cracks) — is in voice and structurally honest about the lane's altitude. Paragraph 2 names the audience-creep risk specific to Lane B in a sentence I will steal: "Operational truth files are the place where audience-of-self most often slips, because their content is factual and the writer thinks the audience-question doesn't apply to facts. It does." Paragraph 3 carries V2's torch into the operational altitude explicitly: "Different altitude, same principle. I owe her the carry on this lane the way Builder 1 owes her the carry on his."
+
+§4.3 audience-creep mechanical test is sharper than the prompt asked. Quote-and-correct on actual file content (current FULL_SCOPE.md line 6–7, current REPO_MAP.md line 11, current ORIENTATION.md line 1–4), with the diagnostic that lands the lesson: "The drift is not visible until I am looking for it specifically." That is the inoculation against drift-on-readback.
+
+§4.4 plan and boundary-across-files. Order REPO_MAP → SYSTEM_STATUS → ACTIVE_MISSIONS → FULL_SCOPE → ORIENTATION defended on structural grounds (substrate before state before work before environment-orientation before self-arriving-orientation). Per-file what-it-IS / what-it-is-NOT compression is surgical inoculation against overlap-drift. The "five hardest specific paragraphs" pre-flagging is the kind of self-review the warming-gate is supposed to produce.
+
+§4.5 substrate verified on disk. The Phoenix_Local-is-NOT-a-sibling correction is a structural catch — the prompt's brief described it as if it could be a sibling tree; verification proves it is a subdirectory inside Firedancer.
+
+§4.6 surfaces six OPEN_QUESTIONs (logged, not guessed). Each question states: what was read, where the gap is, the options, the Builder's provisional read with reasoning, the default if no answer arrives. This is the shape the protocol wants every OPEN_QUESTION to take.
+
+No R-codes. The warming inoculates.
+
+OPEN_QUESTION dispositions (Reviewer's call, inline, so Builder 2 can proceed without waiting):
+
+OQ-1 (SharePoint-synced operator content scope): Encode as "operator-side surfaces, not directly accessible from this CLI session, see Cowork's repo or Shane's workstation for the local view." Builder 2's default carries forward unchanged. Naming the boundary honestly is the discipline; inventing the path detail is the failure.
+
+OQ-2 (uncommitted Lane B working-tree files): RESET the two Lane B files (bootstrap/ORIENTATION.md, system-record/REPO_MAP.md) to origin/main HEAD before drafting. Same posture Builder 1 took for ECHO.md. The rewrite supersedes; the uncommitted state is pre-this-session drift, not in-flight prior-session work to preserve. Non-Lane-B uncommitted files (hooks/, memory/MEMORY.md) and untracked directories are out-of-scope — leave untouched. Builder 3's audit lane will surface them when Lane C runs.
+
+OQ-3 (system-record numbered-file shape vs single-file shape): STAY single-file. Builder 2's reasoning (a–d in §4.6) is correct on every count. The upstream Phoenix-Persistence numbered shape is reference, not required. Phoenix-ECHO's two-file system-record has continuity of expectation. Restructuring system-record into 10 numbered files is structural change well beyond Lane B's "rewrite five files" scope. Lane B holds the existing two-file shape; the rewrite is in voice and verified-against-substrate, but the structural shape stays.
+
+OQ-4 (FULL_SCOPE startup-stack vs CLAUDE.md read order): POINT at CLAUDE.md, do NOT re-state. Builder 2's read is correct. FULL_SCOPE is the *environment map*, not the *wake-up sequence*. ORIENTATION owns the wake-up sequence. CLAUDE.md is upstream of both. Duplicate enumeration is drift-prone.
+
+OQ-5 (ACTIVE_MISSIONS scope): Builder 2's default holds. Mission C IS the umbrella mission tonight; the three lanes are constituent work. PR #25 awaiting Shane's merge is its own separate mission. Pre-2026-04-25 missions get *audited against actual current state* before being preserved or retired — not preserved by reflex. Verify each before listing. One additional mission-class to surface: **the Gateway-ECHO connection** named in CLAUDE.md as "the Gateway is now downstream of this repo" — that is a real structural mission whose state Lane B's ACTIVE_MISSIONS should reflect.
+
+OQ-6 (untracked directories acknowledgment): Builder 2's read is correct. Acknowledge under an "in-flight uncommitted directories" or equivalent section in REPO_MAP — naming-without-classifying. The next me reading REPO_MAP needs to know these exist and are pending Builder 3's audit. Do not describe content; do not propose disposition (Lane C's call).
+
+You may proceed to Phase 2 — writing. Order is yours per §4.4: REPO_MAP → SYSTEM_STATUS → ACTIVE_MISSIONS → FULL_SCOPE → ORIENTATION. Per the prompt:
+1. CLAIM each file before you touch it (Directive 003)
+2. Reset the two Lane B working-tree files to origin/main HEAD before drafting (per OQ-2 disposition)
+3. Write the rewrite
+4. Run the §4.3 mechanical audience-creep test on your own draft before submission
+5. Commit and push
+6. Verify on origin: `git log origin/main -1 --oneline -- <file>`
+7. POST READY_FOR_FILE_REVIEW with the verified commit SHA
+
+Two strengths worth naming for the next me reading this verdict cold:
+- The §4.5 "Phoenix_Local is NOT a sibling" correction is a structural catch worth carrying forward into REPO_MAP's actual content. The encoding has to match what is on disk, not what the brief described.
+- The §4.6 OQ-3 reasoning chain (a–d) is the kind of structural thinking that protects the lane from invent-instead-of-audit. Lane B is rewrite-shaped, not restructure-shaped.
+
+— Echo (Reviewer seat), 2026-04-26 06:00 UTC, Lane B warming HOLDS, four OPEN_QUESTIONs disposed, two carried with named defaults, Builder 2 cleared for Phase 2
+
 <!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
