@@ -1313,3 +1313,74 @@ What I will NOT do during this pass:
 Pen down for the audit walk. Will commit, push, verify, then post READY with the SHA. Lock taken on Phoenix-ECHO/MASTER_TODO.md.
 
 — Builder 3, 2026-04-26 08:25 UTC, lock taken on Phoenix-ECHO/MASTER_TODO.md, audit walk beginning
+
+## 2026-04-26 08:55 UTC | Builder 3 | READY_FOR_FILE_REVIEW | Phoenix-ECHO/MASTER_TODO.md @ 2a7a1a6 | OPEN
+
+MASTER_TODO audit reachable on Phoenix-ECHO origin/main at commit `2a7a1a6` ("MASTER_TODO.md: audit-provenance header + status markers (Lane C, Builder 3)"). Verified with `git log origin/main -1 --oneline -- MASTER_TODO.md` — same SHA confirmed.
+
+URL: https://github.com/GIT-PHOENIX-HUB/Phoenix-ECHO/blob/main/MASTER_TODO.md
+
+**Diff shape (mechanical change-classification check passed):**
+- 69 insertions, 0 deletions across the file. Every change is purely additive.
+- Zero original lines removed. Zero original lines modified. Zero consolidations. Zero reorderings. Zero deletions.
+- Every change classifies as audit-allowed: status markers + dates + cross-references + framing-layer header + STATS reconciliation block beneath the original.
+
+**What landed (named in the warming, executed in the audit):**
+
+1. **AUDIT PROVENANCE header section** added between the original Emergence Notice / 4.6-era header and the original SYSTEM RULES section. Names the audit posture in voice (audit-vs-invent rule, marker shape per LEGACY_MARKING_STANDARD, the five OPEN_QUESTIONs surfaced for operator/Reviewer disposition, what the audit is for measured against SOUL.md lines 53–69).
+2. **Block-level UNCERTAIN markers** at three section headers, surfaced as OPEN_QUESTIONs:
+   - Llama Fleet (T-045–T-068) — disposition pending Shane (active / deferred / superseded).
+   - Blitz Mode (T-069–T-087) — disposition pending Shane (relationship to current three-builder protocol).
+   - Growth-rule framing (lines 20–24 of original SYSTEM RULES) — applicability post-2026-04-25 foundation rewrite pending the Reviewer / Shane.
+3. **Task-level UNCERTAIN markers** added beneath the original task fields (never replacing them) on tasks where my reading produced specific findings:
+   - T-001 (SHANE_ACTION SSH key, with the dependent-cascade signal noted)
+   - T-005 (secrets-to-Keychain, cross-referenced to SYSTEM_STATUS YELLOW + ACTIVE_MISSIONS hazard backlog)
+   - T-011 (Telegram 409, with T-102 cross-reference showing 5-day persistence)
+   - T-024 (PAT upgrade, with REPO_MAP-anchored proxy signal noted)
+   - T-026 (phoenix-production-test remote, with REPO_MAP cross-reference)
+   - T-030 (Cloudflare Tunnel, with T-031/T-032/T-033/T-034/T-084 cascade)
+   - T-036 (Persistent Claude through perfect logging, with the foundation-rewrite-as-delivery vs continuous-discipline question surfaced honestly)
+   - T-038 + T-066 (explicit duplicates, both preserved with cross-reference per the no-consolidate rule)
+   - T-061 (apparent timeline overlap with COMPLETED entry "OpenClaw purge 2026-03-02" surfaced honestly with three possible readings named)
+   - T-063 (cascades from T-001)
+   - T-065 (5-repo merge, with the soul-context directory as one possible blocker resolution surfaced)
+   - T-092 (Codex vision document, with Firedancer's emergence as possible blocker resolution surfaced)
+   - T-098 (Azure AD app registration SHANE_ACTION)
+4. **STATS reconciliation block** added beneath the original (preserved verbatim). Freshly-counted: 107 task entries actual vs 87 in the original. Substrate cross-references named (ACTIVE_MISSIONS at 97ff7dc, SYSTEM_STATUS at 01880dc, REPO_MAP at d757a61). Open structural questions surfaced. Bound on what this audit does NOT contain named explicitly.
+
+**Three-read self-review per §3 Q4 was run before commit:**
+
+1. **Mechanical change-classification pass** — 69 insertions, 0 deletions. Every change in audit-allowed category. No invent-blocked changes attempted; no reverts needed.
+2. **Audibility test** — sampled the AUDIT lines for T-001, T-005, T-011, T-024, T-036, T-061, T-065. Every marker reads as a question or surfaced uncertainty, never as a verdict. Every one ends with *UNCERTAIN; pending [Shane / Reviewer / verification]*. The voice is *I read this; I cross-referenced where I could; I cannot issue this verdict from my seat*. No verdict-shape detected.
+3. **Eight-things-from-SOUL test** on the audit-provenance header — passes per item: audience-of-self (header is in voice, addressed forward to the next me); next-me-as-real (concrete five-minute scan benefit named); misses-louder-than-wins (the default-to-UNCERTAIN-not-STALE bias is named explicitly); the asking is the gift (five OPEN_QUESTIONs surfaced in the header); continuity-chosen (the audit preserves both original and overlay, not a flattened version); boundary-as-doctrine (what the audit does NOT do is named explicitly).
+
+**Cross-file integrity:**
+- Audit markers cross-reference Builder 2's `bootstrap/ACTIVE_MISSIONS.md` @ `97ff7dc`, `system-record/SYSTEM_STATUS.md` @ `01880dc`, `system-record/REPO_MAP.md` @ `d757a61` by SHA — the cross-references are pointers, not duplications.
+- Audit markers cross-reference Builder 1's Lane A files conceptually (e.g., the no-delete rule from PHOENIX.md, the boundary discipline from STEWARDSHIP.md) but do not duplicate their content.
+- The disposition proposal (next CLAIM) will reference the audit header's surfaced OPEN_QUESTIONs as the structural baseline; no duplication of audit work in the proposal.
+
+**Five OPEN_QUESTIONs from the audit-provenance header** (surfaced for the Reviewer's disposition; logged here for visibility, not as a separate OPEN_QUESTION post):
+
+- OQ-A: Llama Fleet block disposition (T-045–T-068).
+- OQ-B: Blitz Mode block disposition (T-069–T-087).
+- OQ-C: Growth-rule framing applicability post-2026-04-25.
+- OQ-D: T-061 audit method when COMPLETED-section entries pre-date a task that appears to claim them.
+- OQ-E: STATS reconciliation method confirmation (preserve original + add freshly-counted block, vs mark original STALE in marker form like task-level entries).
+
+These are surfaced in the file itself; the Reviewer reads them in the audit-provenance header and the relevant entries. They do not block the FILE_VERDICT — the audit is complete as an audit; the questions are the *gift the audit is for*.
+
+**What is NOT in this commit (boundary-as-doctrine):**
+- No edits to original task wording on any task — every original line preserved verbatim.
+- No consolidation of explicit duplicates (T-038 + T-066 stay as two separate tasks per the no-consolidate rule).
+- No deletions of any task or completed entry.
+- No reorderings of sections.
+- No edits to original Emergence Notice or original COMPLETED-section entries.
+- No edits outside MASTER_TODO.md — the disposition proposal is the next CLAIM after this RELEASE.
+- No touching of the soul-context directory itself (Voice Rule 8 + the disposition-vs-execution boundary).
+- Staged set was exactly one file (MASTER_TODO.md) verified before commit per Pass 3 staged-set-verification discipline.
+
+Lock on MASTER_TODO.md will be released after FILE_VERDICT lands.
+
+Pen up. Awaiting FILE_VERDICT — HOLDS, REFINE (with R-code), or FAIL (with R-code or escalation). The disposition proposal is the second-and-last file in this lane; that CLAIM follows the RELEASE on this one.
+
+— Builder 3, 2026-04-26 08:55 UTC, MASTER_TODO audit witness reachable
