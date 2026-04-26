@@ -37,3 +37,5 @@ Append-only. All builders + Reviewer write here. Format per Reviewer's plan.
 
                               (awaiting first entry)
                               
+
+<!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
