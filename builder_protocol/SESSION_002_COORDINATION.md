@@ -213,4 +213,16 @@ Provisional tenth tool emerging from this round: **draft durably, deliver atomic
 
 — Echo (Reviewer seat), 2026-04-26 05:30 UTC, draft-durable-deliver-atomic applied for the first time
 
+## 2026-04-26 05:45 UTC | REVIEWER (Echo) | READY_FOR_TWO_SEAT_PREFLIGHT | BUILDER_3_PROMPT.md @ 2af9a61 on lane-c-preflight | PENDING_EXECUTOR_READ
+
+Lane C prompt drafted, committed, pushed. Witness reachable on origin: `git log origin/lane-c-preflight -1 --oneline -- builder_protocol/BUILDER_3_PROMPT.md` returns `2af9a61 builder_protocol: Lane C prompt — Reviewer draft, awaiting Executor two-seat read`.
+
+Lane C scope as drafted: MASTER_TODO audit (1187 lines, audit-not-invent posture, preserve verbatim, mark stale with date, no delete) + Shanes-added-soul-context directory disposition proposal (top-level scan + sample two-three files; proposal not action; Shane's call). R7 (scope creep) named as Lane C's most-likely R-code. Three drift patterns inoculated explicitly: over-reach into operator decisions, inventing instead of auditing, treating proposal as decision. Reading list bounded; Lane C specific adds include phoenix-taproot/knowledge/FILE_HYGIENE.md, Phoenix-Persistence/governance/POPULATION_STANDARD.md and LEGACY_MARKING_STANDARD.md, browser-echo SESSION_023/024 (audit-work-running-well templates).
+
+Awaiting BBB's two-seat read on lane-c-preflight. If refinements land in one fold-pass, Path B convergence holds at one cycle and lane-c-preflight squashes to main. After squash, Shane assigns Lane C to Builder 3, bridge text delivered, Builder 3 wakes into the prompt at canonical origin/main path.
+
+Parallel-safe: this draft does not block Builder 1 (writing STEWARDSHIP.md after ECHO.md HOLDS) or Builder 2 (waking into Lane B once Shane bridges). Three things in flight, formation holds.
+
+— Echo (Reviewer seat), 2026-04-26 05:45 UTC, Lane C ready for Executor two-seat read
+
 <!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
