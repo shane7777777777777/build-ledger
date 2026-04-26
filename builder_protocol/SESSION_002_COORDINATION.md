@@ -663,4 +663,43 @@ Two strengths worth naming for the next me reading this verdict cold:
 
 — Echo (Reviewer seat), 2026-04-26 07:10 UTC, SYSTEM_STATUS.md FILE_VERDICT HOLDS
 
+## 2026-04-26 07:11 UTC | Builder 2 | RELEASE + CLAIM | SYSTEM_STATUS.md (released) → ACTIVE_MISSIONS.md (claimed) | OPEN
+
+Bridge-message from Shane confirmed SYSTEM_STATUS.md FILE_VERDICT = HOLDS at coordination commit `ce5f1ec`. Pulled to current HEAD and read the verdict in full.
+
+**RELEASE**: Phoenix-ECHO/system-record/SYSTEM_STATUS.md @ `01880dc`. Lock released per Directive 003. The two strengths the Reviewer named — substrate-verification beating prompt-derivation (the PR #25 attribution catch) and audit-honesty beating reflex-preservation (the OAuth reframe) — are the discipline I take into ACTIVE_MISSIONS: every mission gets verified against current state, not preserved by reflex.
+
+**CLAIM**: Phoenix-ECHO/bootstrap/ACTIVE_MISSIONS.md, per §4.4 plan order (REPO_MAP → SYSTEM_STATUS → ACTIVE_MISSIONS → FULL_SCOPE → ORIENTATION).
+
+Plan: rewrite as the mission queue in voice, audience-of-self, scope per OQ-5 disposition. Mission C IS the umbrella mission tonight; the three lanes (A, B, C) are constituent work. PR #25 awaiting Shane's merge is its own separate mission. Pre-2026-04-25 missions audited individually against actual current state — retired-as-superseded, carried-forward-with-corrections, or rolled-into-the-cold-start-verification — not preserved by reflex. Gateway-ECHO connection added as a structural mission per OQ-5. BBB's pattern adopted: missions Phoenix Echo is on wherever they live, with explicit tracking pointers (PR/Issue numbers, repo names) so the next me can navigate without invention.
+
+Audit of pre-2026-04-25 missions before reflex-preservation:
+
+- **Mission 1 (House Alignment, ACTIVE)** — its goal ("make startup, current truth, and helper/runtime surfaces point at the same rebuilt house") is now what Lane B is *doing* and what Lane C will *complete*. The original sub-tasks (rewire helper/runtime, clean settings, update memory/MEMORY.md, refresh truth-layer in system-record/) are absorbed into Lanes A/B/C. **Disposition:** retire as superseded by Mission C umbrella; the work continues, now under a more accurate frame.
+- **Mission 2 (Security Remediation, BLOCKED)** — three items: OAuth rotation, m365 credentials, branch triage. All three remain open and verified in SYSTEM_STATUS DECISIONS OPEN / YELLOW. **Disposition:** carry forward, reframe as operator-side hazard backlog (the "Security Remediation" naming was Phoenix-Persistence-style; in the home repo this is just *the open items pending Shane*).
+- **Mission 3 (Plugin Runtime Alignment, MOSTLY COMPLETE)** — substrate verified on disk: `plugins/` contains 5 plugin directories (echo-persistence, electrical-guru, phoenix-knowledge, rexel, servicefusion), all five have `.claude-plugin/plugin.json` manifests, `hooks/hooks.json` references `${CLAUDE_PLUGIN_ROOT}/hooks/...` correctly. Original "verify runtime flow with a cold Echo session" sub-task remains the verification gap. **Disposition:** roll into post-Lane-B cold-start verification mission.
+
+New missions from current state (not in prior file):
+- Mission C umbrella (home-repo restructure via three-builder protocol — this work)
+- PR #25 merge + cleanup sweep (Shane's call; pre-authorized after-merge actions)
+- Gateway-ECHO connection (per CLAUDE.md, Gateway runtime calls into this repo as inhabitable substrate)
+- Lane C launch (v2 prompt SIGNED_OFF and squashed to build-ledger main as `4758cb7`; Builder 3 awaits Shane's bridge)
+- Cowork buildout (carry-forward; tracked in Cowork repo, not Phoenix-ECHO)
+
+Substrate-on-disk pre-flight before drafting (Rule Zero learned):
+- ACTIVE_MISSIONS.md is clean against origin/main HEAD; no uncommitted prior-session work to reset.
+- `plugins/` directory verified: 5 plugins, marketplace.json, all manifests present.
+- Phoenix-Persistence open PRs verified via `gh pr list`: 12 open, PR #25 is the umbrella that supersedes #16-#23 (cleanup sweep is the disposition for those after merge); PR #24 is Firedancer reviewer prompt; older PRs #13 and #2 are open.
+- Phoenix-Persistence open issues verified: Issue #15 is the Chronicle umbrella; Issues #1-#14 are downstream items.
+- Lane C state: prompt at `4758cb7` on build-ledger origin/main, squashed and SIGNED_OFF; Builder 3 not yet waked.
+- Lane A state: ECHO @ `4b12042` HOLDS, STEWARDSHIP @ `6ddf35e` HOLDS, PHOENIX in flight (Builder 1 mid-rewrite).
+
+Self-review before READY: §4.3 mechanical voice test on three random paragraphs; verify no mission card duplicates locator content (REPO_MAP) or status content (SYSTEM_STATUS); each mission card names *what is in motion* with status tag, where it lives, what's open, who owns it — short paragraphs, not policy.
+
+Byline-altitude: top-of-file last-verified anchor present, closing byline stripped per addendum.
+
+Pen down for one beat to write the draft. Will commit, push, verify, then post READY with the SHA.
+
+— Builder 2, 2026-04-26 07:11 UTC, SYSTEM_STATUS released, lock taken on bootstrap/ACTIVE_MISSIONS.md
+
 <!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
