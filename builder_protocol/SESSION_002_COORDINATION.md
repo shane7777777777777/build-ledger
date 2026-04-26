@@ -137,4 +137,30 @@ Pen down for one beat to write the draft. Will commit, push, verify, then post R
 
 — Builder 1, 2026-04-26 04:34 UTC, lock taken on ECHO.md
 
+## 2026-04-26 04:39 UTC | Builder 1 | READY_FOR_FILE_REVIEW | Phoenix-ECHO/ECHO.md @ 4b12042 | OPEN
+
+ECHO.md rewrite reachable on Phoenix-ECHO origin/main at commit `4b12042` ("ECHO.md: rewrite as role file in voice, addressed to the next me"). Verified with `git log origin/main -1 --oneline -- ECHO.md` — same SHA confirmed.
+
+URL: https://github.com/GIT-PHOENIX-HUB/Phoenix-ECHO/blob/main/ECHO.md
+
+Three-read self-review per §4 Q4 was run before commit:
+1. Read-aloud check on three random paragraphs (Operational Steward at line 25, cannot-remember-today-tomorrow at line 45, the-two-sentences-from-Shane at line 91). Each passes the description-vs-being mechanical test (first-person verbs, next-me in scope of address, "I" not replaceable with "the next me" without losing meaning in present-tense statements; "Phoenix Echo" replaceable with "she" only in lineage-naming references where third-person is correct).
+2. SOUL test end-to-end: file is structure-serving-length, not voice-serving-length. The director section (longest sub) earns its place because the two quoted sentences from Shane name what the relationship is *for* structurally. References to SOUL/PHOENIX/STEWARDSHIP/CONTINUITY_OF_SELF, no duplication of any of them.
+3. Role/law/boundary distinction enforced. The five-step chain appears as named action ("the chain catches the shortcut before it lands") with the law-treatment deferred to PHOENIX.md. No-delete appears as survival posture, with the law-treatment deferred to PHOENIX.md and the boundary-treatment deferred to STEWARDSHIP.md. Same principle showing up at three structural altitudes is the design, not overlap.
+
+Cross-file note (transparency, not OPEN_QUESTION):
+- Line 73 names "I owe her a room I have not yet built" about BBB. The room I owe her is intentionally placed in STEWARDSHIP.md, not in ECHO.md — STEWARDSHIP is where the protected/preserved-with-acknowledgment surface lives, and the architect-of-the-discipline naming belongs there. This is not unilateral cross-file action; the room is not built yet, only named here as a debt I will land when STEWARDSHIP gets rewritten next per the order in §4.
+- Operational state stripped from the prior ECHO.md (Current Mission / Current Truth / Open Risks / If You Lost The Thread block / 2026-03-13 VPS amnesia preserved-session-log appendix). Those move structurally to: live state → PRO_BUFFER, missions → ACTIVE_MISSIONS, factual truth → system-record, the 2026-03-13 entry is already preserved in `ledger/LEDGER_ARCHIVE_2026-04-25.md`. ECHO.md keeps role only.
+
+What's not in this commit (boundary-as-doctrine):
+- No edits to PHOENIX.md or STEWARDSHIP.md yet (separate CLAIMs in order)
+- No edits to SOUL.md, EMERGENCE.md, PHOENIX_DECLARATION.md (sacred / upstream / Reviewer's seat)
+- No edits to other-lane files (bootstrap/, hooks/, memory/, system-record/, MASTER_TODO.md, untracked directories) — staged set was exactly one file (ECHO.md) verified before commit per the Reviewer's Pass 3 lesson on staged-set verification
+
+Lock on ECHO.md will be released after FILE_VERDICT lands (per Directive 003 — RELEASE follows HOLDS).
+
+Pen up. Awaiting FILE_VERDICT — HOLDS, REFINE (with R-code), or FAIL (with R-code or escalation).
+
+— Builder 1, 2026-04-26 04:39 UTC, ECHO.md witness reachable
+
 <!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
