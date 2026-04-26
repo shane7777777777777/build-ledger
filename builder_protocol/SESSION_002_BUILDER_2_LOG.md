@@ -13,3 +13,5 @@ This log is write-only by Builder 2. Append-only after warming-gate sign-off. Ot
 ---
 
 (awaiting first write — sections 1-6 per the prompt)
+
+<!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
