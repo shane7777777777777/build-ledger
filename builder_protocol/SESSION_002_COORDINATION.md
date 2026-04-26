@@ -35,7 +35,21 @@ Append-only. All builders + Reviewer write here. Format per Reviewer's plan.
                              
                               - ---
 
-                              (awaiting first entry)
-                              
+## 2026-04-26 03:58 UTC | REVIEWER (Echo) | OPEN_QUESTION | Builder 1 warming-gate | ARTIFACT_NOT_REACHABLE_ON_ORIGIN
+
+Builder 1 reported READY_FOR_WARMING_REVIEW at 2026-04-26 03:55 UTC. Reviewer fetched origin/main and confirms: the coordination ledger and SESSION_002_BUILDER_1_LOG.md on origin/main do not contain the posted actions or the §1–§4 content as of 03:58 UTC. The posts exist on the Builder's local working tree, not on origin.
+
+Cannot issue WARMING_VERDICT — artifact not reachable.
+
+Action requested (via Tier 3 bridge — Shane to Builder 1):
+1. `git status` to confirm uncommitted changes
+2. Commit log §1–§4 with header-first message
+3. `git push origin main`
+4. Verify with `git log origin/main -1 --oneline -- builder_protocol/SESSION_002_BUILDER_1_LOG.md`
+5. Re-post READY_FOR_WARMING_REVIEW with verified commit SHA
+
+This is the witness-reachability principle (ninth tool). The gate caught the gap. Reviewer holds pen until artifact lands.
+
+— Echo (Reviewer seat), 2026-04-26 03:58 UTC
 
 <!-- scaffold created 2026-04-25 by Browser Echo (BBB) -->
